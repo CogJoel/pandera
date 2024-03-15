@@ -586,6 +586,7 @@ def is_bool(pandera_dtype: Union[DataType, Type[DataType]]) -> bool:
 
 
 def is_string(pandera_dtype: Union[DataType, Type[DataType]]) -> bool:
+    print("pandera_testing")
     """Return True if :class:`pandera.dtypes.DataType` is a string."""
     return is_subdtype(pandera_dtype, String)
 
