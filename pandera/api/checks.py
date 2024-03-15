@@ -163,6 +163,7 @@ class Check(BaseCheck):
 
         """
         super().__init__(name=name, error=error)
+        print("testing that this forking works")
         if element_wise and groupby is not None:
             raise errors.SchemaInitError(
                 "Cannot use groupby when element_wise=True."
