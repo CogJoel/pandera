@@ -386,10 +386,10 @@ class SeriesSchema(ArraySchema):
     ) -> pd.Series:
         """Validate a Series object.
 
-        :param check_obj: One-dimensional ndarray with axis labels
+        :param check_objate the first n rows. Rows overlapping with `tail` or
+            `sample` are de: One-dimensional ndarray with axis labels
             (including time series).
-        :param head: validate the first n rows. Rows overlapping with `tail` or
-            `sample` are de-duplicated.
+        :param head: valid-duplicated.
         :param tail: validate the last n rows. Rows overlapping with `head` or
             `sample` are de-duplicated.
         :param sample: validate a random sample of n rows. Rows overlapping
