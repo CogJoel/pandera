@@ -92,7 +92,6 @@ class ColumnSchema(BaseSchema):
         inplace: bool = False,
         error_handler: ErrorHandler = None,
     ):
-        print(f"check_obj:{check_obj}")
         # pylint: disable=too-many-locals,too-many-branches,too-many-statements
         """Validate a specific column in a dataframe.
 
