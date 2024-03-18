@@ -56,7 +56,6 @@ class BaseSchema(ABC):
         lazy=False,
         inplace=False,
     ):
-        print(f"check_obj:{check_obj}")
         """Validate a DataFrame based on the schema specification.
 
         :param pd.DataFrame check_obj: the dataframe to be validated.

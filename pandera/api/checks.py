@@ -163,7 +163,6 @@ class Check(BaseCheck):
 
         """
         super().__init__(name=name, error=error)
-        print(f"check_fn:{check_fn}")
         if element_wise and groupby is not None:
             raise errors.SchemaInitError(
                 "Cannot use groupby when element_wise=True."
